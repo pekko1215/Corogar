@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Corogar",
+  "description": "ネイマール",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ],
+  "background":{
+    "scripts":["background.js"]
+  },
+  "browser_action": {
+    "default_title": "コロガール"
+  },
+  "web_accessible_resources": [
+     "image/*"
+  ],
+  "permissions":["tabs","background"]
+}
